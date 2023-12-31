@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>index</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="asside">
-        <div class="logo">
-          <img src="assets/VMS_Logo.png" alt="" />
-          <span>Username</span>
-        </div>
-        <div class="user-content">
-          <img src="assets/VMS_Logo.png" alt="" />
-          <span>Coolest User</span>
-        </div>
-        <div class="menu-content">
-          <ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Website Saya</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="burger-icon" onclick="toggleSidebar()">
+      &#9776;
+    </div>
+  </div>
+
+  <aside class="sidebar" id="sidebar">
+    <ul>
+      <li>
+        <div class="menu-item" onclick="toggleSubMenu(this)">
+          <span class="icon">A</span> Menu 1
+          <ul class="sub-menu">
             <li>
-              <img src="assets/VMS_Logo.png" alt="" />
-              <span>Overview</span>
-            </li>
-            <li>
-              <img src="assets/VMS_Logo.png" alt="" />
-              <span>Campaigns</span>
-            </li>
-            <li>
-              <img src="assets/VMS_Logo.png" alt="" />
-              <span>Analytics</span>
-              <ul>
-                <li>
-                  <img src="assets/VMS_Logo.png" alt="" />
-                  <span>Campaigns</span>
-                </li>
-                <li>
-                  <img src="assets/VMS_Logo.png" alt="" />
-                  <span>Overview</span>
-                </li>
-              </ul>
+              <div class="menu-item" onclick="toggleSubMenu(this)">
+                <span class="icon">A.1</span> Submenu 1.1
+                <ul class="sub-menu">
+                  <li>Sub-submenu 1.1.1</li>
+                  <li>Sub-submenu 1.1.2</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="content-side">
-        <div class="navbar">
-          <div class="left">
-            <img src="assets/Sort.png" alt="" />
-          </div>
-          <div class="right">
-            <span>Username</span>
-            <img src="assets/Arrow_drop_down.png" alt="" />
-          </div>
+      </li>
+      <li>
+        <div class="menu-item" onclick="toggleSubMenu(this)">
+          <span class="icon">B</span> Menu 2
+          <ul class="sub-menu">
+            <li>Submenu 2.1</li>
+            <li>Submenu 2.2</li>
+          </ul>
         </div>
-        <div class="content-block">
-            <h1>ini konten</h1>
-        </div>
-      </div>
-    </div>
-  </body>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <!-- Konten utama website -->
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
 </html>

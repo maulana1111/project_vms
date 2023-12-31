@@ -86,3 +86,71 @@ body, html {
     padding: 8px 0;
     border-style: none;
 }
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: left;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .menu-item:hover {
+    background-color: #555;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .sub-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .sub-menu li {
+    padding: 5px;
+    color: #ccc;
+  }
+
+  .sub-menu .sub-menu {
+    margin-left: 20px;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+  }
+  
+  .burger-icon.active {
+    margin-left: 250px;
+  }
+  
+  /* Tambahkan transition untuk perubahan margin */
+  .burger-icon {
+    transition: margin-left 0.5s;
+  }
