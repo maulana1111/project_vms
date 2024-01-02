@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Website Saya</title>
-</head>
-<body>
-
-  <div class="navbar">
-    <div class="burger-icon" onclick="toggleSidebar()">
-      &#9776;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Website Saya</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="burger-icon" onclick="toggleSidebar()">&#9776;</div>
     </div>
-  </div>
 
-  <aside class="sidebar" id="sidebar">
-    <ul>
-      <li>
-        <div class="menu-item" onclick="toggleSubMenu(this)">
-          <span class="icon">A</span> Menu 1
-          <ul class="sub-menu">
-            <li>
-              <div class="menu-item" onclick="toggleSubMenu(this)">
-                <span class="icon">A.1</span> Submenu 1.1
-                <ul class="sub-menu">
-                  <li>Sub-submenu 1.1.1</li>
-                  <li>Sub-submenu 1.1.2</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">
+        <div class="left">
+          <img src="assets/VMS_Logo.png" alt="logo" />
+          <span>VMS</span>
         </div>
-      </li>
-      <li>
-        <div class="menu-item" onclick="toggleSubMenu(this)">
-          <span class="icon">B</span> Menu 2
-          <ul class="sub-menu">
-            <li>Submenu 2.1</li>
-            <li>Submenu 2.2</li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </aside>
+      </div>
+      <ul>
+        <li>
+          <div class="menu-item" onclick="toggleSubMenu(this, 1)">
+            <span class="icon">A</span> Menu 1
+            <ul class="sub-menu level-1">
+              <li>
+                <div class="menu-item" onclick="toggleSubMenu(this, 2)">
+                  <span class="icon">A.1</span> Submenu 1.1
+                  <ul class="sub-menu level-2">
+                    <li>Sub-submenu 1.1.1</li>
+                    <li>Sub-submenu 1.1.2</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
 
-  <div class="content">
-    <!-- Konten utama website -->
-  </div>
+    <div class="content">
+      <!-- Konten utama website -->
+    </div>
 
-  <script src="script/script.js"></script>
-</body>
+    <script src="script/script.js"></script>
+  </body>
 </html>

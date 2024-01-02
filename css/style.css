@@ -43,22 +43,36 @@ body, html {
     display: flex;
     justify-content: space-around;
 }
+.sidebar > .logo {
+  display: grid;
+  justify-items: center;
+}
 
-.logo > .left > img {
+.sidebar > .logo > .left > img {
+  width: 31px;
+  height: 36px;
+  margin-right: 15px;
+}
+
+.sidebar > .logo > .left > span {
+  font-size: 30px;
+}
+
+.frame-login > .logo > .left > img {
     width: 55px;
     height: 65px;
 }
 
-.logo > .right {
+.frame-login > .logo > .right {
     display: grid;
 }
 
-.logo > .right > span:nth-child(1) {
+.frame-login > .logo > .right > span:nth-child(1) {
     font-size: 30px;
     text-align: center;
 }
 
-.logo > .right > span:nth-child(2) {
+.frame-login > .logo > .right > span:nth-child(2) {
     font-size: 16px;
     text-align: center;
 }
@@ -88,10 +102,14 @@ body, html {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #E9F1F7;
     padding: 15px;
-    color: white;
+    color: black;
     text-align: left;
+    width: 144vh;
+    position: fixed;
+    top: 0;
+    right: 0;
   }
   
   .sidebar {
@@ -99,11 +117,12 @@ body, html {
     width: 250px;
     position: fixed;
     top: 0;
-    left: -250px;
-    background-color: #111;
+    left: -30vh;
+    background-color: #E9F1F7;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 10px;
     transition: 0.5s;
+    box-shadow: 1px 0px 7px gray;
   }
   
   .sidebar ul {
@@ -147,7 +166,7 @@ body, html {
   }
   
   .burger-icon.active {
-    margin-left: 250px;
+    margin-left: 30vh;
   }
   
   /* Tambahkan transition untuk perubahan margin */
